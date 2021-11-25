@@ -1,0 +1,7 @@
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\bin\Project5Services.dll.config
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\bin\Project5Services.dll
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\bin\Project5Services.pdb
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.AssemblyReference.cache
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.CoreCompileInputs.cache
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.dll
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.pdb
