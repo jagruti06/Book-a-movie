@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project5Services", "Project5Services.csproj", "{2DF55D29-0A3E-4DF8-A915-1F2446F50EF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryItWebApp", "..\TryItWebApp\TryItWebApp.csproj", "{3714FDAF-50BC-4C94-8FDC-6EDF569B948E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DF55D29-0A3E-4DF8-A915-1F2446F50EF8} = {2DF55D29-0A3E-4DF8-A915-1F2446F50EF8}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{2DF55D29-0A3E-4DF8-A915-1F2446F50EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF55D29-0A3E-4DF8-A915-1F2446F50EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF55D29-0A3E-4DF8-A915-1F2446F50EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3714FDAF-50BC-4C94-8FDC-6EDF569B948E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3714FDAF-50BC-4C94-8FDC-6EDF569B948E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3714FDAF-50BC-4C94-8FDC-6EDF569B948E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3714FDAF-50BC-4C94-8FDC-6EDF569B948E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
