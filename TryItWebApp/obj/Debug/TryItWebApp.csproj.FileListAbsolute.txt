@@ -72,3 +72,5 @@ C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\obj\
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\obj\Debug\TryItWebApp.csproj.CopyComplete
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\obj\Debug\TryItWebApp.dll
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\obj\Debug\TryItWebApp.pdb
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\bin\PasswordCrypt.dll
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\TryItWebApp\bin\PasswordCrypt.pdb

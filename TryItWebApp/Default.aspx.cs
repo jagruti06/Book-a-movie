@@ -11,7 +11,7 @@ namespace TryItWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           // Response.Redirect("CryptTryIt.aspx");
         }
 
         protected void SendInvite_Handler(object sender, EventArgs e)

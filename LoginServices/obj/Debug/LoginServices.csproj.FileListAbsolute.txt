@@ -1,0 +1,7 @@
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\obj\Debug\LoginServices.csproj.AssemblyReference.cache
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\obj\Debug\LoginServices.csproj.CoreCompileInputs.cache
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\bin\LoginServices.dll.config
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\bin\LoginServices.dll
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\bin\LoginServices.pdb
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\obj\Debug\LoginServices.dll
+C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\LoginServices\obj\Debug\LoginServices.pdb
