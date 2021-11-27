@@ -5,19 +5,20 @@
     
 
    <left><br>
-      <h2> <asp:Label ID="Label2" runat="server" Text="Encrypt service test"></asp:Label></h2>
-       <h6> <asp:Label ID="Label1" runat="server" Text="Enter password - "></asp:Label></h6>
-       <asp:TextBox ID="password_text" runat="server"></asp:TextBox>
-    <asp:Button ID="encrypt_btn" runat="server" Text="Encrypt" OnClick="Encrypt_Handler" /><br>
-    <asp:Label ID="encrypt_ans" runat="server" Text=" "></asp:Label></left><br><br><br>
+      <h2> <asp:Label ID="Label2" runat="server" Text="Member Login"></asp:Label></h2>
+    <asp:Button ID="mem_login_btn" runat="server" Text="Member Login" OnClick="Member_Handler" /><br>
+    <asp:Label ID="encrypt_ans" runat="server" Text=" "></asp:Label><br>
+     <h2> <asp:Label ID="Label1" runat="server" Text="Member Registration"></asp:Label></h2>
+    <asp:Button ID="mem_reg_btn" runat="server" Text="Register" OnClick="MemReg_Handler" /><br>
+    <asp:Label ID="Label4" runat="server" Text=" "></asp:Label></left><br><br><br>
 
     <left><br>
-      <h2> <asp:Label ID="Label3" runat="server" Text="Decrypt service test"></asp:Label></h2>
-       <h6> <asp:Label ID="Label4" runat="server" Text="Enter password - "></asp:Label></h6>
-       <asp:TextBox ID="decrypt_text" runat="server"></asp:TextBox>
-    <asp:Button ID="decrypt_btn" runat="server" Text="Decrypt" OnClick="Decrypt_Handler" /><br>
-    <asp:Label ID="decrypt_ans" runat="server" Text=" "></asp:Label></left><br><br><br>
-    <h4>About</h4><br />
-    <h5>Send Invite service - takes input string for email id of the person who you want to invite and sends them an email with details of the movie</h5><br />
-    <h5>Bank service - takes credit card details and transaction amount and returns if the card is valid and has sufficient balance for payment</h5><br />
+      <h2> <asp:Label ID="Label3" runat="server" Text="Staff Login"></asp:Label></h2>
+    <asp:Button ID="staff_login_btn" runat="server" Text="Staff Login" OnClick="Staff_Handler" /><br>
+    <asp:Label ID="decrypt_ans" runat="server" Text=" "></asp:Label><br />
+        <h2> <asp:Label ID="Label5" runat="server" Text="Staff Registration"></asp:Label></h2>
+    <asp:Button ID="staff_reg_btn" runat="server" Text="Staff Register" OnClick="StaffReg_Handler" /><br>
+    </left><br><br><br>
+    <h4>About the application</h4>
+    <asp:Button ID="About" runat="server" Text="Learn More" OnClick="About_Handler" /><br>
 </asp:Content>

@@ -111,6 +111,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <None Include="Connected Services\LoginServiceRef\Service1.wsdl" />
+    <None Include="Connected Services\LoginServiceRef\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\LoginServiceRef\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServiceReference1\Project5Service.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
@@ -118,6 +125,14 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\LoginServiceRef\Service1.disco" />
+    <None Include="Connected Services\LoginServiceRef\configuration91.svcinfo" />
+    <None Include="Connected Services\LoginServiceRef\configuration.svcinfo" />
+    <None Include="Connected Services\LoginServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="XMLTryIt.aspx" />
     <Content Include="CryptTryIt.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -189,10 +204,22 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\LoginServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="XMLTryIt.aspx.cs">
+      <DependentUpon>XMLTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XMLTryIt.aspx.designer.cs">
+      <DependentUpon>XMLTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="CryptTryIt.aspx.cs">
       <DependentUpon>CryptTryIt.aspx</DependentUpon>
@@ -259,6 +286,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\LoginServiceRef\" />
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <PropertyGroup>

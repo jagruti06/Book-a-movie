@@ -15,16 +15,24 @@ namespace Project5WebApp
 
         }
 
-        protected void Encrypt_Handler(object sender, EventArgs e)
+        protected void Member_Handler(object sender, EventArgs e)
         {
-            string text = CryptLibrary.Encrypt(password_text.Text);
-            encrypt_ans.Text = text;
+            Response.Redirect("Account/MemberLogin.aspx");
         }
 
-        protected void Decrypt_Handler(object sender, EventArgs e)
+        protected void MemReg_Handler(object sender, EventArgs e)
         {
-            string text = CryptLibrary.Decrypt(decrypt_text.Text);
-            decrypt_ans.Text = text;
+            Response.Redirect("Account/MemberRegister.aspx");
+        }
+
+        protected void Staff_Handler(object sender, EventArgs e)
+        {
+            Response.Redirect("Account/StaffLogin.aspx");
+        }
+
+        protected void StaffReg_Handler(object sender, EventArgs e)
+        {
+            Response.Redirect("Account/StaffRegister.aspx");
         }
     }
 }
