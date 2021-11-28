@@ -21,6 +21,8 @@ namespace LoginServices
                 string filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Member.xml";
                 if (userType == "Staff")
                     filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Staff.xml";
+                else if(userType == "TryIt")
+                    filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\TryIt.xml";
 
                 XmlDocument myDoc = new XmlDocument();
                 myDoc.Load(filepath); // open file
@@ -47,11 +49,13 @@ namespace LoginServices
             }
             return "false";
         }
-        public string searchUser(string username, string password, string userType)
+        public string[] searchUser(string username, string password, string userType)
         {
             string filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Member.xml";
             if(userType == "Staff")
                 filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Staff.xml";
+            else if (userType == "TryIt")
+                filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\TryIt.xml";
 
             XmlDocument myDoc = new XmlDocument();
             myDoc.Load(filepath); // open file
@@ -61,11 +65,11 @@ namespace LoginServices
             {
                 if (node["username"].InnerText == username && node["password"].InnerText == password)
                 {
-                    return "true";
+                    return new string[] {username, password};
                 }
             }
             
-            return "false";
+            return null;
         }
     }
 }

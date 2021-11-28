@@ -16,7 +16,7 @@ namespace LoginServices
         string addUser(string username, string password, string userType);
 
         [OperationContract]
-        string searchUser(string username, string password, string userType);
+        string[] searchUser(string username, string password, string userType);
 
     }
 

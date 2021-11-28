@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="XMLTryIt.aspx.cs" Inherits="TryItWebApp.XMLTryIt" %>
+﻿<%@ Page Title="XML Services" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="XMLTryIt.aspx.cs" Inherits="TryItWebApp.XMLTryIt" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <left><br>

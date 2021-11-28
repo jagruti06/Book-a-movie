@@ -12,7 +12,7 @@ namespace Project5WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
 
         protected void Member_Handler(object sender, EventArgs e)
@@ -31,6 +31,11 @@ namespace Project5WebApp
         }
 
         protected void StaffReg_Handler(object sender, EventArgs e)
+        {
+            Response.Redirect("Account/StaffRegister.aspx");
+        }
+
+        protected void About_Handler(object sender, EventArgs e)
         {
             Response.Redirect("Account/StaffRegister.aspx");
         }

@@ -8,4 +8,16 @@
     <username>jay123</username>
     <password>password123</password>
   </UserDetails>
+  <UserDetails>
+    <username>hello</username>
+    <password>hello</password>
+  </UserDetails>
+  <UserDetails>
+    <username>new</username>
+    <password>new</password>
+  </UserDetails>
+  <UserDetails>
+    <username>jagruti</username>
+    <password>11910110899111109101</password>
+  </UserDetails>
 </Users>
