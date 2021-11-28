@@ -62,9 +62,9 @@ namespace Project5Services
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
             request.AddHeader("api-version", "v200");
-            request.AddHeader("Authorization", "Basic U1RVRF8xOTA6RGFSbnB5eWpkYjdQ");
-            request.AddHeader("client", "STUD_190");
-            request.AddHeader("x-api-key", "bs6f0mXzgo5r1vYuUj8Vj9cwiYP4tqVK9ShZFLlB");
+            request.AddHeader("Authorization", "Basic U1RVRF8xOTE6d3hKNTcwRkluT2xv");
+            request.AddHeader("client", "STUD_191");
+            request.AddHeader("x-api-key", "iNuhHMcoOO6vCtX8lHlQC2Yn6ldxJ07X4aQ7FYAq");
             request.AddHeader("device-datetime", date_time);
             request.AddHeader("territory", "US");
             IRestResponse response = client.Execute(request);
@@ -90,12 +90,12 @@ namespace Project5Services
                 var obj = new RestClient("https://api-gate2.movieglu.com/filmShowTimes/?film_id=" + films[filmname] + "&date=" + dateString2 + "&n=5"); // service call to get the movie show times based on the film id.
                 obj.Timeout = -1;
                 var request_2 = new RestRequest(Method.GET);
-                request_2.AddHeader("api-version", "v200");
-                request_2.AddHeader("Authorization", "Basic U1RVRF8xOTA6RGFSbnB5eWpkYjdQ");
-                request_2.AddHeader("client", "STUD_190");
-                request_2.AddHeader("x-api-key", "bs6f0mXzgo5r1vYuUj8Vj9cwiYP4tqVK9ShZFLlB");
-                request_2.AddHeader("device-datetime", date_time);
-                request_2.AddHeader("territory", "US");
+                request.AddHeader("api-version", "v200");
+                request.AddHeader("Authorization", "Basic U1RVRF8xOTE6d3hKNTcwRkluT2xv");
+                request.AddHeader("client", "STUD_191");
+                request.AddHeader("x-api-key", "iNuhHMcoOO6vCtX8lHlQC2Yn6ldxJ07X4aQ7FYAq");
+                request.AddHeader("device-datetime", date_time);
+                request.AddHeader("territory", "US");
                 request_2.AddHeader("geolocation", "33.42192;-111.8798");
                 IRestResponse response_2 = obj.Execute(request_2);
                 dynamic film_json = JObject.Parse(response_2.Content);
