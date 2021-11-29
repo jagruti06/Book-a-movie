@@ -37,7 +37,7 @@ namespace Project5WebApp
 
         protected void About_Handler(object sender, EventArgs e)
         {
-            Response.Redirect("Account/StaffRegister.aspx");
+            Response.Redirect("About.aspx");
         }
     }
 }

@@ -118,10 +118,34 @@
     <Content Include="Account\MemberLogin.aspx" />
     <Content Include="App_Data\Member.xml" />
     <Content Include="App_Data\Staff.xml" />
+    <None Include="Connected Services\imageVerServiceRef\Service.wsdl" />
+    <None Include="Connected Services\imageVerServiceRef\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\imageVerServiceRef\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\imageVerServiceRef\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\LoginServiceRef\Service1.disco" />
     <None Include="Connected Services\LoginServiceRef\configuration91.svcinfo" />
     <None Include="Connected Services\LoginServiceRef\configuration.svcinfo" />
     <None Include="Connected Services\LoginServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\MovieService\Project5Service.disco" />
+    <None Include="Connected Services\MovieService\configuration91.svcinfo" />
+    <None Include="Connected Services\MovieService\configuration.svcinfo" />
+    <None Include="Connected Services\MovieService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\imageVerServiceRef\Service.disco" />
+    <None Include="Connected Services\imageVerServiceRef\configuration91.svcinfo" />
+    <None Include="Connected Services\imageVerServiceRef\configuration.svcinfo" />
+    <None Include="Connected Services\imageVerServiceRef\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -153,7 +177,21 @@
     <None Include="Connected Services\LoginServiceRef\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\MovieService\Project5Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MovieService\Project5Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MovieService\Project5Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MovieService\Service1.wsdl" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="ImageVerifierUserControl.ascx" />
+    <Content Include="MovieApp\GetTheatres.aspx" />
+    <Content Include="MovieApp\StaffApp.aspx" />
+    <Content Include="MovieApp\SendInvite.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -226,7 +264,17 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Connected Services\imageVerServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\LoginServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\MovieService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -247,6 +295,34 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ImageVerifierUserControl.ascx.cs">
+      <DependentUpon>ImageVerifierUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageVerifierUserControl.ascx.designer.cs">
+      <DependentUpon>ImageVerifierUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieApp\GetTheatres.aspx.cs">
+      <DependentUpon>GetTheatres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieApp\GetTheatres.aspx.designer.cs">
+      <DependentUpon>GetTheatres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieApp\StaffApp.aspx.cs">
+      <DependentUpon>StaffApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieApp\StaffApp.aspx.designer.cs">
+      <DependentUpon>StaffApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MovieApp\SendInvite.aspx.cs">
+      <DependentUpon>SendInvite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MovieApp\SendInvite.aspx.designer.cs">
+      <DependentUpon>SendInvite.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -286,7 +362,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\imageVerServiceRef\" />
     <WCFMetadataStorage Include="Connected Services\LoginServiceRef\" />
+    <WCFMetadataStorage Include="Connected Services\MovieService\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

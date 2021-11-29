@@ -26,6 +26,12 @@ namespace Project5WebApp.LoginServiceRef {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/searchUser", ReplyAction="http://tempuri.org/IService1/searchUserResponse")]
         System.Threading.Tasks.Task<string[]> searchUserAsync(string username, string password, string userType);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getCreditCards", ReplyAction="http://tempuri.org/IService1/getCreditCardsResponse")]
+        string getCreditCards();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getCreditCards", ReplyAction="http://tempuri.org/IService1/getCreditCardsResponse")]
+        System.Threading.Tasks.Task<string> getCreditCardsAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,6 +75,14 @@ namespace Project5WebApp.LoginServiceRef {
         
         public System.Threading.Tasks.Task<string[]> searchUserAsync(string username, string password, string userType) {
             return base.Channel.searchUserAsync(username, password, userType);
+        }
+        
+        public string getCreditCards() {
+            return base.Channel.getCreditCards();
+        }
+        
+        public System.Threading.Tasks.Task<string> getCreditCardsAsync() {
+            return base.Channel.getCreditCardsAsync();
         }
     }
 }

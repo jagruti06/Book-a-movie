@@ -18,6 +18,8 @@ namespace LoginServices
         [OperationContract]
         string[] searchUser(string username, string password, string userType);
 
+        [OperationContract]
+        string getCreditCards();
     }
 
 }

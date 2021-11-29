@@ -5,3 +5,15 @@ C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.CoreCompileInputs.cache
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.dll
 C:\Users\Jagruti Dhondage\source\Final_Project\movie-invite-app\Project5Services\obj\Debug\Project5Services.pdb
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\Project5Services.dll.config
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\Project5Services.dll
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\Project5Services.pdb
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\Newtonsoft.Json.dll
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\RestSharp.dll
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\Newtonsoft.Json.xml
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\bin\RestSharp.xml
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.CoreCompileInputs.cache
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.CopyComplete
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\obj\Debug\Project5Services.dll
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\obj\Debug\Project5Services.pdb
+C:\Users\jay11\source\repos\movie-invite-app\Project5Services\obj\Debug\Project5Services.csproj.AssemblyReference.cache

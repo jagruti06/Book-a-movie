@@ -42,6 +42,33 @@ namespace Project5WebApp
         protected global::System.Web.UI.WebControls.TextBox password;
 
         /// <summary>
+        /// verifierText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox verifierText;
+
+        /// <summary>
+        /// image_label control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label image_label;
+
+        /// <summary>
+        /// ImageVerifierUserControl1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Project5WebApp.ImageVerifierUserControl ImageVerifierUserControl1;
+
+        /// <summary>
         /// reg_btn control.
         /// </summary>
         /// <remarks>
@@ -58,14 +85,5 @@ namespace Project5WebApp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

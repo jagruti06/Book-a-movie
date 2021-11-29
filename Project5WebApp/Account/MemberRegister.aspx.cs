@@ -21,12 +21,39 @@ namespace Project5WebApp
             string pwd = password.Text;
             LoginServiceRef.Service1Client service = new LoginServiceRef.Service1Client();
             string pwdEncrypt = CryptLibrary.Encrypt(pwd);
-   
-            string result = service.addUser(uname, pwdEncrypt, "Member");
-            if (result == "true")
-                Response.Redirect("MemberLogin.aspx"); //redirect to login page
-            else
-                Label3.Text = "Registration failed. Please try again";
+
+            if (verifierText.Text == ImageVerifierUserControl1.GeneratedString)
+            {
+                image_label.Text = "Text Verified";
+                string result = service.addUser(uname, pwdEncrypt, "Member");
+                if (result == "true")
+                    Response.Redirect("MemberLogin.aspx"); //redirect to login page
+                else
+                    Label3.Text = "Registration failed. Please try again";
+            }
+            else if(verifierText.Text =="")
+            {
+                image_label.Text = "Please enter the below captcha";
+            }
+            else 
+            {
+                image_label.Text = "Incorrect text entered";
+            }
+           
+
+
         }
+
+        /*protected void Button2_Click(object sender, EventArgs e)
+        {
+            if(verifierText.Text == ImageVerifierUserControl1.GeneratedString)
+            {
+                image_label.Text = "Text Verified";
+            }
+            else
+            {
+                image_label.Text = "Incorrect text entered";
+            }
+        }*/
     }
 }

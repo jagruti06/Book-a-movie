@@ -18,6 +18,12 @@ namespace Project5Services
                 string DateTime*/
         [OperationContract]
         string sendMail(string to, string details);
+
+        [OperationContract]
+        List<string> TheatreList(string name);
+
+        [OperationContract]
+        List<string> GetShowTimings(string filmname, string filmID, string cinemaName);
     }
 
 }

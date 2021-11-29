@@ -12,7 +12,7 @@ namespace Project5WebApp
         protected void Page_Load(object sender, EventArgs e)
         {
             HttpCookie myCookies = Request.Cookies["movieCookies"];
-            if ((myCookies == null) || (myCookies["Name"] == ""))
+            if ((myCookies == null) || (myCookies["Name"] == "") || Session["Name"] == null)
             {
                 Button1.Visible = false;
             }
@@ -24,11 +24,15 @@ namespace Project5WebApp
 
         protected void Logout_Handler(object sender, EventArgs e)
         {
-            Response.Redirect("Default.aspx");
+           
             //session end
             HttpCookie myCookies = Request.Cookies["movieCookies"];
             myCookies["Name"] = "";
             myCookies["Role"] = "";
+            myCookies.Expires = DateTime.Now.AddMonths(-6);
+            Response.Cookies.Add(myCookies);
+            Session["Name"] = null;
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

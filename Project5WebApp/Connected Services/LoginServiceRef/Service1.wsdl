@@ -19,6 +19,12 @@
   <wsdl:message name="IService1_searchUser_OutputMessage">
     <wsdl:part name="parameters" element="tns:searchUserResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getCreditCards_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCreditCards" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getCreditCards_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCreditCardsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="addUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/addUser" message="tns:IService1_addUser_InputMessage" />
@@ -27,6 +33,10 @@
     <wsdl:operation name="searchUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/searchUser" message="tns:IService1_searchUser_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/searchUserResponse" message="tns:IService1_searchUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCreditCards">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getCreditCards" message="tns:IService1_getCreditCards_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getCreditCardsResponse" message="tns:IService1_getCreditCards_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -42,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="searchUser">
       <soap:operation soapAction="http://tempuri.org/IService1/searchUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCreditCards">
+      <soap:operation soapAction="http://tempuri.org/IService1/getCreditCards" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

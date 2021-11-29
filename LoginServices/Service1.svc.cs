@@ -71,5 +71,22 @@ namespace LoginServices
             
             return null;
         }
+
+        public string getCreditCards()
+        {
+            string path = HttpRuntime.AppDomainAppPath + @"\App_Data\Member.xml";
+            XmlDocument dx = new XmlDocument();
+            dx.Load(path);
+            XmlNodeList nodes = dx.DocumentElement.SelectNodes("/Users/UserDetails");
+            string htmlStr = "";
+            foreach (XmlNode node in nodes)
+            {
+                string uname = node.SelectSingleNode("username").InnerText;
+              
+                htmlStr += "<tr><td>" + uname + "</td><td>";
+
+            }
+            return htmlStr;
+        }
     }
 }

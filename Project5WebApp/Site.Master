@@ -57,7 +57,7 @@
                 </div>
                 <div id ="buttondiv">
 
-                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Logout_Handler" />
+                    <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Logout_Handler" />
 
                 </div>
             </div>

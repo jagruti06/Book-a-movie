@@ -12,6 +12,7 @@ namespace Project5WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            users_label.Text = "No of Users online: " + Application["UsersOnline"].ToString();
             HttpCookie myCookies = Request.Cookies["movieCookies"];
             if ((myCookies == null) || (myCookies["Name"] == "" ) || (myCookies["Role"] =="Staff") )
             {
@@ -19,7 +20,8 @@ namespace Project5WebApp
             }
             else
             {
-                Response.Redirect("StaffLogin.aspx"); // application page
+                Session["Name"] = myCookies["Name"];
+                Response.Redirect("../MovieApp/GetTheatres.aspx"); // application page
             }
         }
 
@@ -36,10 +38,11 @@ namespace Project5WebApp
                 HttpCookie myCookies = new HttpCookie("movieCookies");
                 myCookies["Role"] = "Member";
                 myCookies["Name"] = uname;
+                Session["Name"] = uname;
                // myCookies["Email"] = TextBox2.Text;
                 myCookies.Expires = DateTime.Now.AddMonths(6);
                 Response.Cookies.Add(myCookies);
-                Response.Redirect("MemberRegister.aspx"); //redirect to application page
+                Response.Redirect("../MovieApp/GetTheatres.aspx"); //redirect to application page
             }
             else
                 Label3.Text = "User not found. Please register";

@@ -12,13 +12,15 @@ namespace Project5WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            users_label.Text = "No of Users online: " + Application["UsersOnline"].ToString();
             HttpCookie myCookies = Request.Cookies["movieCookies"];
             if ((myCookies == null) || (myCookies["Name"] == ""))
             {
                 username.Visible = true;
                 password.Visible = true;
                 login_btn.Visible = true;
-                Label1.Visible = true;
+               
             }
             else
             {
@@ -28,7 +30,8 @@ namespace Project5WebApp
                 }
                 else
                 {
-                    Response.Redirect("StaffRegister.aspx"); // application page
+                    Session["Name"] = myCookies["Name"];
+                    Response.Redirect("../MovieApp/StaffApp.aspx"); // application page
                 }
                
             }
@@ -44,14 +47,20 @@ namespace Project5WebApp
 
             string[] result = service.searchUser(uname, pwdEncrypt, "Staff");
             if (result != null)
-                Response.Redirect("Account/MemberRegister.aspx"); //redirect to application page
+            {
+                HttpCookie myCookies = new HttpCookie("movieCookies");
+                myCookies["Role"] = "Staff";
+                myCookies["Name"] = uname;
+                Session["Name"] = uname;
+                // myCookies["Email"] = TextBox2.Text;
+                myCookies.Expires = DateTime.Now.AddMonths(6);
+                Response.Cookies.Add(myCookies);
+                Response.Redirect("../MovieApp/StaffApp.aspx"); //redirect to application page
+            }
             else
                 Label3.Text = "User not found. Please register";
         }
 
-        protected void Logout_Handler(object sender, EventArgs e)
-        {
-            Response.Redirect("StaffRegister.aspx");
-        }
+       
     }
 }
